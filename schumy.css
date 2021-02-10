@@ -1,0 +1,235 @@
+*
+
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: consolas ;
+
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #111111;
+    color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 78vh;
+    max-width: 100%;
+}
+h1
+{
+    
+    justify-content: center;  
+    text-align: center;
+    animation-name: schumy;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    position: relative;
+    top:0;
+    width: 1920px;
+    min-width: 192px;
+    margin: 10px;
+
+}
+
+@keyframes schumy
+{
+    0% { color: burlywood;}
+    10%{color: aquamarine;}
+    40% { color: darksalmon; }
+    60%{color: rgb(240, 172, 70) ; }
+    80%{color: deeppink; }
+    90%{color: rgb(165, 43, 236); }
+    100% { color: burlywood;}
+    
+
+
+}
+
+
+.cntr{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    flex-wrap: wrap;
+}
+
+.cntr .bx {
+    position : relative;
+    width: 430px;
+    height: 400px;
+    color: white;
+    background: #111111;
+    display:flex;
+    justify-content: baseline;
+    align-items:center;
+    margin:  20px 30px;
+    transition: 0.5s;
+
+}
+
+ .cntr .bx:hover
+{
+    transform: translateY(-30px)  ;
+}
+.cntr  .bx::before
+{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, orange, red);
+}
+
+.cntr  .bx::after
+{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgb(238, 162, 20), red);
+    filter: blur(30px);
+}
+.cntr .bx1 {
+    position : relative;
+    width: 400px;
+    height: 400px;
+    color: white;
+    background: #111111;
+    display:flex;
+    justify-content: baseline;
+    align-items:center;
+    margin:  20px 30px;
+    transition: 0.5s;
+
+}
+
+ .cntr .bx1:hover
+{
+    transform: translateY(-30px) ;
+    
+}
+img:hover
+{
+    transform: translateY(-30px);
+    transition: 0.5s;
+    
+}
+.cntr  .bx1::before
+{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgb(197, 41, 197), rgb(100, 210, 224));
+}
+
+.cntr  .bx1::after
+{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgb(197, 41, 197), rgb(100, 210, 224));
+    filter: blur(30px);
+}
+.cntr .bx2 {
+    position : relative;
+    width: 400px;
+    height: 400px;
+    color: white;
+    background: #111111;
+    display:flex;
+    justify-content: baseline;
+    align-items:center;
+    margin:  20px 30px;
+    transition: 0.5s;
+
+}
+
+ .cntr .bx2:hover
+{
+    transform: translateY(-30px)  ;
+}
+
+.cntr  .bx2::before
+{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgb(235, 98, 143), rgb(83, 224, 119));
+}
+
+.cntr  .bx2::after
+
+{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgb(235, 98, 143), rgb(83, 224, 119), );
+    filter: blur(30px);
+}
+
+.cntr span
+
+{
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    right: 6px;
+    bottom: 6px;
+    background: rgb(0, 0, 0, 0.5);
+    z-index: 2;
+}
+.cntr span::before
+{
+    content:' ';
+    position: absolute;
+    top:0;
+    left:0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    pointer-events: none;
+}
+
+.cntr .bx .cnt , .cntr .bx1 .cnt , .cntr .bx2 .cnt
+{
+
+    position:relative;
+    justify-content: center;
+    z-index: 3;
+    padding: 20px;
+    color: white;
+}
+
+.cntr .bx .cnt h2, .cntr .bx1 .cnt h2, .cntr .bx2 .cnt h2
+{
+    font-size: 3em;
+    text-align: center;
+    color: #ffffff;
+    position: relative;
+    width: 355px;
+    
+    
+}
